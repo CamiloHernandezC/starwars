@@ -42,17 +42,18 @@ public class MessageInterceptorImpl implements MessageInterceptorInterface{
 		int vectorSize3 = message3.size()-1;
 		
 		while(vectorSize1>0 || vectorSize2>0 || vectorSize3>0) {
-			if(!message1.get(vectorSize1).equals("")) {
+			if(vectorSize1>0 && !message1.get(vectorSize1).equals("")) {
 				interceptedMessage.add(0, message1.get(vectorSize1));
 			}
-			if(!message2.get(i).equals("")) {
-				interceptedMessage.add(0, message2.get(i));
-				continue;
+			else if(vectorSize2>0 && !message2.get(vectorSize2).equals("")) {
+				interceptedMessage.add(0, message2.get(vectorSize2));
 			}
-			if(!message3.get(i).equals("")) {
-				interceptedMessage.add(0, message3.get(i));
-				continue;
+			else if(vectorSize3>0 && !message3.get(vectorSize3).equals("")) {
+				interceptedMessage.add(0, message3.get(vectorSize3));
 			}
+			vectorSize1--;
+			vectorSize2--;
+			vectorSize3--;
 		}
 		
 		for(int i = largerVector-1; i >= 0; i--) {
