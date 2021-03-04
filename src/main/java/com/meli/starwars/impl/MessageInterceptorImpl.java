@@ -6,7 +6,7 @@ import java.util.Vector;
 import org.springframework.stereotype.Service;
 
 import com.meli.starwars.dto.InterceptedCommunicationDTO;
-import com.meli.starwars.entity.Satellite;
+import com.meli.starwars.dto.SatelliteDTO;
 import com.meli.starwars.exceptions.InterceptionException;
 import com.meli.starwars.interfaces.MessageInterceptorInterface;
 import com.meli.starwars.utils.*;
@@ -15,16 +15,16 @@ import com.meli.starwars.utils.*;
 public class MessageInterceptorImpl implements MessageInterceptorInterface{
 
 	@Override
-	public InterceptedCommunicationDTO interceptMessage(final List<Satellite> satellites) {
+	public InterceptedCommunicationDTO interceptMessage(final List<SatelliteDTO> satellites) {
 		InterceptedCommunicationDTO result = new InterceptedCommunicationDTO();
 		result.setPosition(determinePosition(satellites));
 		result.setMessage(determineMessage(satellites));
 		return result;
 	}
 
-	private Vector<String> determineMessage(List<Satellite> satellites) {
+	private Vector<String> determineMessage(List<SatelliteDTO> satellites) {
 		int largerVector = 0; 
-		for (Satellite satellite : satellites) {
+		for (SatelliteDTO satellite : satellites) {
 			if(satellite.getMessage().size()>largerVector) {
 				largerVector = satellite.getMessage().size(); 
 			}
@@ -62,11 +62,11 @@ public class MessageInterceptorImpl implements MessageInterceptorInterface{
 		return interceptedMessage;
 	}
 
-	private Position determinePosition(List<Satellite> satellites) {
+	private Position determinePosition(List<SatelliteDTO> satellites) {
 		try {
-			final Satellite satellite1 = satellites.get(0);
-			final Satellite satellite2 = satellites.get(1);
-			final Satellite satellite3 = satellites.get(2);
+			final SatelliteDTO satellite1 = satellites.get(0);
+			final SatelliteDTO satellite2 = satellites.get(1);
+			final SatelliteDTO satellite3 = satellites.get(2);
 			
 			final double distance12 = Math.sqrt(Math.pow((satellite1.getX()-satellite2.getX()),2)+ Math.pow((satellite1.getY()-satellite2.getY()),2));
 			final double tetha = Math.asin((satellite2.getY()-satellite1.getY())/distance12);

@@ -2,17 +2,16 @@ package com.meli.starwars.dto;
 
 import java.util.List;
 
-import com.meli.starwars.entity.Satellite;
 
 public class SatelliteWrapper {
 	
-	private List<Satellite> satellites;
+	private List<SatelliteDTO> satellites;
 
-	public List<Satellite> getSatellites() {
+	public List<SatelliteDTO> getSatellites() {
 		return satellites;
 	}
 
-	public void setSatellites(List<Satellite> satellites) {
+	public void setSatellites(List<SatelliteDTO> satellites) {
 		this.satellites = satellites;
 	}
 	
