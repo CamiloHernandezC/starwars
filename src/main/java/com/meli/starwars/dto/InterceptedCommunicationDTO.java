@@ -1,4 +1,4 @@
-package dto;
+package com.meli.starwars.dto;
 
 import java.io.Serializable;
 import java.util.Vector;

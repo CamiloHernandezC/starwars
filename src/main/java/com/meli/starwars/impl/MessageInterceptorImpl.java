@@ -5,12 +5,11 @@ import java.util.Vector;
 
 import org.springframework.stereotype.Service;
 
+import com.meli.starwars.dto.InterceptedCommunicationDTO;
 import com.meli.starwars.entity.Satellite;
 import com.meli.starwars.exceptions.InterceptionException;
 import com.meli.starwars.interfaces.MessageInterceptorInterface;
 import com.meli.starwars.utils.*;
-
-import dto.InterceptedCommunicationDTO;
 
 @Service
 public class MessageInterceptorImpl implements MessageInterceptorInterface{

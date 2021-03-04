@@ -11,13 +11,12 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.meli.starwars.dto.InterceptedCommunicationDTO;
+import com.meli.starwars.dto.SatelliteWrapper;
 import com.meli.starwars.entity.Satellite;
 import com.meli.starwars.exceptions.SatelliteNotFoundException;
 import com.meli.starwars.interfaces.MessageInterceptorInterface;
 import com.meli.starwars.repositories.SatelliteRepository;
-
-import dto.InterceptedCommunicationDTO;
-import dto.SatelliteWrapper;
 
 @RestController
 public class SatelliteController {
