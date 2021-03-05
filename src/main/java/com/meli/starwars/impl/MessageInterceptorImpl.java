@@ -16,6 +16,9 @@ public class MessageInterceptorImpl implements MessageInterceptorInterface{
 
 	@Override
 	public InterceptedCommunicationDTO interceptMessage(final List<SatelliteDTO> satellites) {
+		if(satellites.size()<3) {
+			throw new InterceptionException("You need at least 3 satellites to determine position");
+		}
 		InterceptedCommunicationDTO result = new InterceptedCommunicationDTO();
 		result.setPosition(determinePosition(satellites));
 		result.setMessage(determineMessage(satellites));
@@ -94,8 +97,6 @@ public class MessageInterceptorImpl implements MessageInterceptorInterface{
 			}
 			
 			return new Position(xOrigin, yOrigin);
-		}catch (ArrayIndexOutOfBoundsException notEnoughSatellites) {
-			throw new InterceptionException("You need at least 3 satellites to determine position");
 		}catch (ArithmeticException arithmeticException) {
 			throw new InterceptionException("The position can't be determined");
 		}

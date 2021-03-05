@@ -58,13 +58,22 @@ public class Satellite {
 
 	public Satellite() {}
 
-	public Satellite(double x, double y, String name) {
+	public Satellite(String name, double x, double y) {
+		this.name = name;
 		this.x = x;
 		this.y = y;
-		this.name = name;
 	}
 	
-	 @Override
+	public Satellite(String name, double x, double y, double distance, Vector<String> message) {
+		super();
+		this.name = name;
+		this.x = x;
+		this.y = y;
+		this.distance = distance;
+		this.message = message;
+	}
+
+	@Override
 	  public boolean equals(Object o) {
 
 	    if (this == o)

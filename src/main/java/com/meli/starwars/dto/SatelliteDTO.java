@@ -60,13 +60,21 @@ public class SatelliteDTO implements Serializable {
 
 	public SatelliteDTO() {}
 
-	public SatelliteDTO(double x, double y, String name) {
+	public SatelliteDTO(String name, double x, double y) {
+		this.name = name;
 		this.x = x;
 		this.y = y;
-		this.name = name;
 	}
 	
-	 @Override
+	 public SatelliteDTO(String name, double x, double y, double distance, Vector<String> message) {
+		this.name = name;
+		this.x = x;
+		this.y = y;
+		this.distance = distance;
+		this.message = message;
+	}
+
+	@Override
 	  public boolean equals(Object o) {
 
 	    if (this == o)
