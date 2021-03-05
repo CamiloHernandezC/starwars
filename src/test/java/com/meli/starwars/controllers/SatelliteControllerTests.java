@@ -5,7 +5,6 @@ import com.meli.starwars.dto.InterceptedCommunicationDTO;
 import com.meli.starwars.dto.SatelliteDTO;
 import com.meli.starwars.dto.SatelliteWrapper;
 import com.meli.starwars.entity.Satellite;
-import com.meli.starwars.exceptions.SatelliteNotFoundException;
 import com.meli.starwars.interfaces.MessageInterceptorInterface;
 import com.meli.starwars.repositories.SatelliteRepository;
 import com.meli.starwars.utils.Position;
@@ -16,8 +15,6 @@ import org.mockito.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -241,10 +238,6 @@ class SatelliteControllerTests {
 		SatelliteDTO satelliteDTO1 = new SatelliteDTO("satellite1",0, 2*100*Math.sqrt(3));
 		SatelliteDTO satelliteDTO2 = new SatelliteDTO("satellite2",100, 0);
 		SatelliteDTO satelliteDTO3 = new SatelliteDTO("satellite3",-100, 0);
-		
-		Satellite satellite1 = new Satellite("satellite1",0, 2*100*Math.sqrt(3));
-		Satellite satellite2 = new Satellite("satellite2",100, 0);
-		Satellite satellite3 = new Satellite("satellite3",-100, 0);
 		
 		List<SatelliteDTO> satellitesDTOToUse = new ArrayList<>();
 		satellitesDTOToUse.add(satelliteDTO1);

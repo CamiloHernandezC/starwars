@@ -28,7 +28,6 @@ public class SwaggerConfig {
 
     private static final String MAINTAINER = "camilo.hernandez.castillo@gmail.com";
     private static final Set<String> DEFAULT_PRODUCES = new HashSet<>(Arrays.asList("application/json"));
-    private static final Set<String> DEFAULT_CONSUMES = new HashSet<>(Arrays.asList("application/json"));
 
     public static final Contact DEFAULT_CONTACT = new Contact("Camilo Hernandez", MAINTAINER, MAINTAINER);
     public static final ApiInfo DEFAULT = new ApiInfo("Api Documentation for Starwars",
