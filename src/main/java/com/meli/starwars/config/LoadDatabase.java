@@ -17,9 +17,9 @@ public class LoadDatabase {
 	@Bean
 	CommandLineRunner initDatabase(SatelliteRepository repository) {
 		return args -> {
-			log.info("Preloading " + repository.save(new Satellite("Kenobi", 0, 2*100*Math.sqrt(3))));
-			log.info("Preloading " + repository.save(new Satellite("Skywalker", 100, 0)));
-			log.info("Preloading " + repository.save(new Satellite("Sato", -100, 0)));
+			log.info("Preloading " + repository.save(new Satellite("Kenobi", -500, -200)));
+			log.info("Preloading " + repository.save(new Satellite("Skywalker", 100, -100)));
+			log.info("Preloading " + repository.save(new Satellite("Sato", 500, 100)));
 	    };
 	}
 }
