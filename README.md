@@ -21,7 +21,7 @@
 
 ## Ejercicio
 
-### [Implementación y tecnologias usadas](#Implementacion)
+### Implementacion
 
 - Java 8
 - Spring
