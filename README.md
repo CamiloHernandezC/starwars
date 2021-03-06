@@ -3,7 +3,7 @@
 
 
 - [Ejercicio](#ejercicio)
-  - [Implementación y tecnologias usadas](#Implementacion)
+  - [Implementación y tecnologias usadas](#Implementación-y-tecnologías-usadas)
   - [Comentarios relevantes](#comentarios)
   - [Algoritmo](#Algoritmo)
 - [Setup](#setup)
@@ -21,7 +21,7 @@
 
 ## Ejercicio
 
-### Implementacion
+### Implementacion y tecnologías usadas
 
 - Java 8
 - Spring
