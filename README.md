@@ -3,7 +3,7 @@
 
 
 - [Ejercicio](#ejercicio)
-  - [Implementación y tecnologias usadas](#Implementación y tecnologias usadas)
+  - [Implementación y tecnologias usadas](#Implementacion)
   - [Comentarios relevantes](#comentarios)
   - [Algoritmo](#Algoritmo)
 - [Setup](#setup)
@@ -13,7 +13,7 @@
   - [Servicios](#servicios)
     - [TopSecret](#TopSecret)
     - [TopSecret_Split (POST)](#TopSecret_Split-POST)
-    - [TopSecret_SPLIT (GET)](#TopSecret_SPplit-GET)
+    - [TopSecret_SPLIT (GET)](#TopSecret_Split-GET)
 - [Test](#test)
   - [Automaticos](#automaticos)
 - [Inconvenientes](#Inconvenientes)
@@ -21,7 +21,7 @@
 
 ## Ejercicio
 
-### Implementación y tecnologias usadas
+### [Implementación y tecnologias usadas](#Implementacion)
 
 - Java 8
 - Spring
