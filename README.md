@@ -3,26 +3,25 @@
 
 
 - [Ejercicio](#ejercicio)
-  - [Implementación y tecnologias usadas](#implementaci%C3%B3n-y-tecnologias-usadas)
+  - [Implementación y tecnologias usadas](#Implementación y tecnologias usadas)
   - [Comentarios relevantes](#comentarios)
   - [Algoritmo](#Algoritmo)
 - [Setup](#setup)
   - [Instrucciones](#instrucciones)
   - [Uso](#uso)
-  - [API Url](#api)
+  - [API Url](#API Url)
   - [Servicios](#servicios)
     - [TopSecret](#TopSecret)
-    - [TopSecret_Split (POST)](#TopSecret_Split (POST))
-    - [TopSecret_SPLIT (GET)](#TopSecret_SPplit (GET))
+    - [TopSecret_Split (POST)](#TopSecret_Split-POST)
+    - [TopSecret_SPLIT (GET)](#TopSecret_SPplit-GET)
 - [Test](#test)
   - [Automaticos](#automaticos)
-  - [Cobertura](#cobertura)
 - [Inconvenientes](#Inconvenientes)
 - [Mejoras](#Mejoras)
 
 ## Ejercicio
 
-### Implementacion y tecnologias usadas
+### Implementación y tecnologias usadas
 
 - Java 8
 - Spring
@@ -190,7 +189,7 @@ Response:
 ```
   Status - 404 OK
 ```
-#### TopSecret_Split (POST)
+#### TopSecret_Split-POST
 
 Con el verbo POST podrá recibir la distancia y mensaje interceptado por cada uno de los satelites de manera independiente.
 
@@ -235,7 +234,7 @@ Response:
   Could not find satellite
 ```
 
-#### TopSecret_Split (GET)
+#### TopSecret_Split-GET
 
 Con el verbo GET podrá determinar la posición y el mensaje interceptado.
 
