@@ -3,13 +3,13 @@
 
 
 - [Ejercicio](#ejercicio)
-  - [Implementación y tecnologias usadas](#Implementación-y-tecnologías-usadas)
+  - [Implementación y tecnologías usadas](#Implementacion-y-tecnologias-usadas)
   - [Comentarios relevantes](#comentarios)
   - [Algoritmo](#Algoritmo)
 - [Setup](#setup)
   - [Instrucciones](#instrucciones)
   - [Uso](#uso)
-  - [API Url](#API Url)
+  - [API Url](#API-Url)
   - [Servicios](#servicios)
     - [TopSecret](#TopSecret)
     - [TopSecret_Split (POST)](#TopSecret_Split-POST)
@@ -21,7 +21,7 @@
 
 ## Ejercicio
 
-### Implementacion y tecnologías usadas
+### Implementacion y tecnologias usadas
 
 - Java 8
 - Spring
@@ -126,7 +126,7 @@ Si todo está bien en el puerto 8080 (puerto utilizado por defecto) podrá ver l
 
 http://localhost:8080/swagger-ui.html
 
-### API Url
+### API-Url
 
 Como se mencionó anteriormente la dirección local del proyecto se encuentra en:
 
