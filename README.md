@@ -285,6 +285,12 @@ Para los test se utilizó Junit y se trató de tener la mayor covertura posible,
 
 ![Coverage Image](doc/images/coverage.PNG)
 
+### Inconvenientes
+
+- Como se mencionó anteriormente el despliegue en Azure no se pudo realizar por problemas con el método de dautenticación para hacer el despliegue con Maven.
+- El ejemplo del problema no tenía solución, por lo que fue complicado probar el algoritmo y se tuvo que realizar la busqueda de otro ejemplo que funcionara.
+- La solución se pedía en Golang pero por el tiempo para desarrollar la prueba y la expertise del programador se realizó en Java.
+
 
 ### Mejoras
 
@@ -292,5 +298,3 @@ Para los test se utilizó Junit y se trató de tener la mayor covertura posible,
 - Tests de carga y de seguridad
 - Dokerización
 - Utilizar Octopus para mantener los properties sin necesidad de recompilar el proyecto
-
-
