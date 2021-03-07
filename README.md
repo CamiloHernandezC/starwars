@@ -284,3 +284,16 @@ The position can't be determined
 Para los test se utilizó Junit y se trató de tener la mayor covertura posible, enfocandose en los controladores y la implementación de las interfaces utilizadas.
 
 ![Coverage Image](doc/images/coverage.PNG)
+
+
+### Mejoras
+
+Uso de SSL con tokens OAUTH 2.0
+
+Tests de carga y de seguridad
+
+Dokerización
+
+Utilizar Octopus para mantener los properties sin necesidad de recompilar el proyecto
+
+
