@@ -288,12 +288,9 @@ Para los test se utilizó Junit y se trató de tener la mayor covertura posible,
 
 ### Mejoras
 
-Uso de SSL con tokens OAUTH 2.0
-
-Tests de carga y de seguridad
-
-Dokerización
-
-Utilizar Octopus para mantener los properties sin necesidad de recompilar el proyecto
+- Uso de SSL con tokens OAUTH 2.0
+- Tests de carga y de seguridad
+- Dokerización
+- Utilizar Octopus para mantener los properties sin necesidad de recompilar el proyecto
 
 
